@@ -1,4 +1,5 @@
 
+
 :root{
   --background-color: #ffd358;
   --text-color-red: #a01b53;
@@ -17,22 +18,23 @@
 }
 
 html{
-  display: flex;
-  justify-content: center;
-  font-family: 'Omefont';
+    font-family: 'Omefont';
 }
 
+
 body{
-  margin: 0;
-  padding: 5em;
+  margin: 3em 0 3em 0;
   background-color: var(--background-color);
-  width: 50vw;
+  display: flex;
+  justify-content: center;
 }
 
 main{
   background-color: var(--main-background-color);
   border-radius: 25px;
-  padding: 3em;
+  padding: 3em 3em 0 3em;
+  width: 100vw;
+  max-width: 600px;
 }
 
 h1{
@@ -113,16 +115,14 @@ section:nth-of-type(1) div span{
 
 /*  */
 
-@media screen and (max-width:665px) {
+@media screen and (max-width:700px) {
   body{
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
+    margin: 0;
   }
 
   main{
     border-radius: 0;
-    padding: 0;
+    padding: 3em;
   }
 
   h1,h2,h3{
@@ -145,6 +145,8 @@ section:nth-of-type(1) div span{
   header img{
     border-radius: 0;
     border: none;
+    border-bottom: 2px solid black;
+    box-shadow: none;
   }
 
   main section:nth-of-type(1){
@@ -153,18 +155,18 @@ section:nth-of-type(1) div span{
   border-radius: 0;
 }
 
-section:nth-of-type(1) div p{
-  margin-left: 10px;
-}
+  section:nth-of-type(1) div p{
+    margin-left: 10px;
+  }
 
-section:nth-of-type(1) div span{
-  text-decoration: none;
-  width: 60px;
-  margin-right: 10px;
-}
+  section:nth-of-type(1) div span{
+    text-decoration: none;
+    width: 60px;
+    margin-right: 10px;
+  }
 
-main section:nth-of-type(4){
-    padding-bottom: 10px;
-}
+  main section:nth-of-type(4){
+      padding-bottom: 10px;
+  }
 
 }
